@@ -1,0 +1,7 @@
+/node_modules/
+/.vscode/
+/.idea/
+**/sandbox/
+/sequelize*.json
+/public
+/.env
