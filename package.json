@@ -4,13 +4,14 @@
   "description": "",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon ./server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "date-fns": "^2.21.0",
     "express": "^4.17.1",
     "http-errors": "^1.8.0",
     "pg": "^8.6.0",

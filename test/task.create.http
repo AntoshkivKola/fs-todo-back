@@ -1,0 +1,7 @@
+POST http://localhost:3000/api/tasks HTTP/1.1
+Content-Type: application/json
+
+{
+  "body": "   adipisicing elit. Fugit sunt a possimus aspernatur exercitationem aut beatae praesentium voluptatibus facilis cupiditate veniam quasi omnis, aperiam accusantium porro recusandae sed tenetur! Animi, totam tenetur? Labore maiores quia aliquid reiciendis impedit suscipit nesciunt dolor soluta veniam facere enim possimus repudiandae laboriosam fuga, necessitatibus incidunt illum sit, asperiores eligendi distinctio. Neque at nemo voluptatibus illo est. Sequi, quibusdam quo, cum inventore velit libero impedit exercitationem quis dicta commodi consectetur sunt a blanditiis voluptatum. Consectetur iste deleniti vitae tempora magnam iusto consequatur aliquam pariatur a dicta qui quis placeat, laborum provident corporis laudantium libero soluta?  ",
+  "deadline": "2030-1-1"
+}
