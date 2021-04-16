@@ -28,7 +28,7 @@ module.exports = (sequelize, DataTypes) => {
       deadline: {
         type: DataTypes.DATE,
         validate: {
-          isValidDAte (value) {
+          isValidDeadline (value) {
             if (isAfter(new Date(), new Date(value))) {
               throw new Error('Error: Deadline can`t be in the past!');
             }

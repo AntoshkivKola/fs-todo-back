@@ -4,11 +4,15 @@ const TaskController = require('../controllers/tasks.controller');
 
 const taskRouter = Router();
 
-taskRouter.get('/', TaskController.getAllTasks);
-taskRouter.post('/', TaskController.createTask);
+taskRouter
+  .route('/')
+  .get(TaskController.getAllTasks)
+  .post(TaskController.createTask);
 
-taskRouter.get('/:id', TaskController.getTask);
-taskRouter.patch('/:id', TaskController.updateTask);
-taskRouter.delete('/:id', TaskController.deleteTask);
+taskRouter
+  .route('/:id')
+  .get(TaskController.getTask)
+  .patch(TaskController.updateTask)
+  .delete(TaskController.deleteTask);
 
 module.exports = taskRouter;

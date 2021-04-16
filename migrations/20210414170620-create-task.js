@@ -13,7 +13,7 @@ module.exports = {
         type: Sequelize.STRING,
       },
       isDone: {
-        default: false,
+        defaultValue: false,
         
         field: 'is_done',
         type: Sequelize.BOOLEAN,
