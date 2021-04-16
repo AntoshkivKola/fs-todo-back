@@ -1,12 +1,12 @@
 const { Router } = require('express');
 const TaskController = require('../controllers/tasks.controller');
-// const  paginate  = require('../middlewares/paginate.mw');
+const paginate = require('../middlewares/paginate.mw');
 
 const taskRouter = Router();
 
 taskRouter
   .route('/')
-  .get(TaskController.getAllTasks)
+  .get(paginate(5), TaskController.getAllTasks)
   .post(TaskController.createTask);
 
 taskRouter

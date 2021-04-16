@@ -20,7 +20,10 @@ module.exports.createTask = async (req, res, next) => {
 
 module.exports.getAllTasks = async (req, res, next) => {
   try {
-    const tasks = await Task.findAll();
+    const { pagination } = req;
+    const tasks = await Task.findAll({
+      ...pagination,
+    });
 
     if (!tasks?.length) {
       return next(createError(404));
