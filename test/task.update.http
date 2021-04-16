@@ -1,6 +1,8 @@
-PATCH http://localhost:3000/api/tasks/4 HTTP/1.1
+PATCH http://localhost:3000/api/tasks/13 HTTP/1.1
 Content-Type: application/json
 
 {
-  "isDone": true
+  "isDone": true,
+  "body": "task13",
+  "deadline": "2023"
 } 
