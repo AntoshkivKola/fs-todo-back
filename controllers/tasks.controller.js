@@ -26,7 +26,7 @@ module.exports.getAllTasks = async (req, res, next) => {
     });
 
     if (!tasks?.length) {
-      return next(createError(404));
+      return next(createError(404, 'Tasks not found'));
     }
 
     res.status(200).send({
